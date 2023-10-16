@@ -1,4 +1,5 @@
 import "./app.scss";
+import "./index.css";
 import { Navbar } from "./components";
 import { Header, Footer, About, Skills, Testimonial, Work } from "./container";
 function App() {

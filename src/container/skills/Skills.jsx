@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
+
 
 const Skills = () => {
   const [experiences, setExperiences] = useState([]);
@@ -64,11 +64,13 @@ const Skills = () => {
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
+                
                     <Tooltip
                       id={work.name}
                       effect="solid"
                       arrowColor="#fff"
                       className="skills-tooltip"
+                     
                     >
                       {work.desc}
                     </Tooltip>

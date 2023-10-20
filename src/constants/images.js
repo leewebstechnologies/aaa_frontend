@@ -5,6 +5,7 @@ import cpp from "../assets/cpp.png";
 import css from "../assets/css.png";
 import figma from "../assets/figma.png";
 import favicon from "../assets/favicon.png";
+import sm from "../assets/sm.png";
 
 import git from "../assets/git.png";
 import graphql from "../assets/graphql.png";
@@ -38,10 +39,19 @@ import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 import bootstrap from "../assets/bootstrap.png";
 import ps from "../assets/ps.png";
+import a from "../assets/a.jpg";
+import b from "../assets/b.jpg";
+import c from "../assets/c.png";
+import d from "../assets/d.png";
 
 // eslint-disable-next-line
 export default {
+  a,
+  b,
+  c,
+  d,
   email,
+  sm,
   ps,
   bootstrap,
   mobile,

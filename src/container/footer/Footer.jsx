@@ -62,43 +62,47 @@ const Footer = () => {
         </div>
       </div>
       {!isFormSubmitted ? (
-        <div className="app__footer-form app__flex" onSubmit={handleSubmit}>
-          <div className="app__flex">
-            <input
+          <div className="app__footer-form app__flex" onSubmit={handleSubmit}>
+            <div className="app__flex">
+              <input
+                className="p-text"
+                type="text"
+                placeholder="Your Name"
+                name="username"
+                value={username}
+                onChange={handleChangeInput}
+                required
+              />
+            </div>
+            <div className="app__flex">
+              <input
+                className="p-text"
+                type="email"
+                placeholder="Your Email"
+                name="email"
+                value={email}
+                onChange={handleChangeInput}
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                className="p-text"
+                placeholder="Your Message"
+                value={message}
+                name="message"
+                onChange={handleChangeInput}
+                required
+              />
+            </div>
+            <button
+              type="button"
               className="p-text"
-              type="text"
-              placeholder="Your Name"
-              name="username"
-              value={username}
-              onChange={handleChangeInput}
-              required
-            />
+              onClick={handleSubmit}
+            >
+              {!loading ? "Send Message" : "Sending..."}
+            </button>
           </div>
-          <div className="app__flex">
-            <input
-              className="p-text"
-              type="email"
-              placeholder="Your Email"
-              name="email"
-              value={email}
-              onChange={handleChangeInput}
-              required
-            />
-          </div>
-          <div>
-            <textarea
-              className="p-text"
-              placeholder="Your Message"
-              value={message}
-              name="message"
-              onChange={handleChangeInput}
-              required
-            />
-          </div>
-          <button type="button" className="p-text" onClick={handleSubmit}>
-            {!loading ? "Send Message" : "Sending..."}
-          </button>
-        </div>
       ) : (
         <div>
           <h3 className="head-text">Thank you for getting in touch!</h3>

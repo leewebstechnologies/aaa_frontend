@@ -4,8 +4,8 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { easeInOut, motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
 import { urlFor, client } from "../../client";
-import { images } from "../../constants";
 // import { images } from "../../constants";
+
 
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -115,39 +115,6 @@ const Work = () => {
           </div>
         ))}
       </motion.div>
-      <h2 className="ab">Graphic Design Projects</h2>
-      <div className="graphics">
-        <img
-          className="app__work-img app__flex"
-          style={{ marginRight: "10px" }}
-          src={images.sm}
-          alt=""
-        />
-        <img
-          className="app__work-img app__flex"
-          style={{ marginRight: "10px" }}
-          src={images.a}
-          alt=""
-        />
-        <img
-          className="app__work-img app__flex"
-          style={{ marginRight: "10px" }}
-          src={images.b}
-          alt=""
-        />
-        <img
-          className="app__work-img app__flex"
-          style={{ marginRight: "10px" }}
-          src={images.c}
-          alt=""
-        />
-        <img
-          className="app__work-img app__flex"
-          style={{ marginRight: "10px" }}
-          src={images.d}
-          alt=""
-        />
-      </div>
     </>
   );
 };

@@ -57,6 +57,14 @@ const About = () => {
         <br /> means
         <span> Good Business</span>
       </h2>
+      <p>
+        I am an experienced software developer who is very proficient at
+        building scalable, fast performing applications and software using React
+        Js and its ecosystem. I have thrived in the web development space for
+        more than 3+ years now and have amassed the prerequisite expertise
+        needed to bring your Web Product to life. What gives me an edge is the
+        fact that I also know how to make eye-catching graphic design.
+      </p>
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div

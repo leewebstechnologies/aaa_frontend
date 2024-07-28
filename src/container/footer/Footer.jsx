@@ -14,8 +14,7 @@ const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  // eslint-disable-next-line
-  const { username, email, message } = formData;
+  const { name, email, message } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -25,7 +24,7 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
-      formData.username === "" ||
+      formData.name === "" ||
       formData.email === "" ||
       formData.message === ""
     ) {
@@ -36,7 +35,7 @@ const Footer = () => {
 
     const contact = {
       _type: "contact",
-      name: formData.username,
+      name: formData.name,
       email: formData.email,
       message: formData.message,
     };
@@ -79,7 +78,7 @@ const Footer = () => {
               type="text"
               placeholder="Your Name"
               name="username"
-              value={username}
+              value={name}
               onChange={handleChangeInput}
               required
             />

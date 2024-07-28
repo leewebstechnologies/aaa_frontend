@@ -14,7 +14,7 @@ const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const { name, email, message } = formData;
+  const { username, email, message } = formData;
 
   const handleChangeInput = (e) => {
     const { name, value } = e.target;
@@ -24,7 +24,7 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (
-      formData.name === "" ||
+      formData.username === "" ||
       formData.email === "" ||
       formData.message === ""
     ) {
@@ -35,7 +35,7 @@ const Footer = () => {
 
     const contact = {
       _type: "contact",
-      name: formData.name,
+      name: formData.username,
       email: formData.email,
       message: formData.message,
     };
@@ -78,7 +78,7 @@ const Footer = () => {
               type="text"
               placeholder="Your Name"
               name="username"
-              value={name}
+              value={username}
               onChange={handleChangeInput}
               required
             />

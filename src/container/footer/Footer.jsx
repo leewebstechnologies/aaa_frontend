@@ -14,6 +14,7 @@ const Footer = () => {
   const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  // eslint-disable-next-line
   const { username, email, message } = formData;
 
   const handleChangeInput = (e) => {
